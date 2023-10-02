@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.img-calculator{
+    width: 20px;
+    display: flex;
+    margin:5px;
+}
+.history{
+    display: flex;
+    flex-direction:row;
+    align-items:end;
+    justify-content: space-between;
+  }
+  /* .hamburguer-wrapper{
+    
+  } */
+
+.hamburguer {
+    width: 20px;
+    height: 2px;
+    background-color: whitesmoke;
+    margin: 5px;
+  }
+  
+
+.container{
+    font-family:sans-serif;
+    color:whitesmoke;
+    background-color: green;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.box{
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 300px;
+    
+}
+
+.display{
+    background-color: rgb(75, 74, 74);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* .display .history{
+
+} */
+.display .result{
+font-size: 50px;
+font-weight: bold;
+}
+
+.wrapper{
+    background-color: rgb(34, 0, 255);
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Define dos columnas de igual tamaño */
+    row-gap: 2px;
+    column-gap: 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+
+}
+.key{
+    background-color: rgb(128, 123, 123);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    
+
+
+}
