@@ -8,15 +8,25 @@
     display: flex;
     margin:5px;
 }
-.history{
+.icons{
     display: flex;
     flex-direction:row;
     align-items:end;
     justify-content: space-between;
+    /* border: 1px solid black; */
+    
+
   }
   /* .hamburguer-wrapper{
     
   } */
+  .historial{
+    display:flex;
+    align-items:center; 
+    justify-content: flex-end;
+    margin-left: 120px;
+    /* border: 1px solid black; */
+  }
 
 .hamburguer {
     width: 20px;
@@ -39,48 +49,76 @@
 
 }
 .box{
-    background-color: red;
+    background-color: rgb(32, 32, 32);
     border-radius: 10px;
-    padding: 10px;
+    padding: 6px;
     min-width: 300px;
-    
+    padding-bottom: 10px;
 }
 
 .display{
-    background-color: rgb(75, 74, 74);
+    background-color: rgb(32, 32, 32);
     display: flex;
     flex-direction: column;
     text-align: right;
     gap:10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-/* .display .history{
+    margin-top: 5px;
+    margin-bottom: -2px;
+    /* border: 1px solid black;  */
+    height: 25%;
 
-} */
-.display .result{
+}
+ .display .history{
+    font-size: small;
+    opacity: 0.6;
+} 
+.display.result{
 font-size: 50px;
 font-weight: bold;
+justify-content: center;
+}
+.display.letter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    /* border: 1px solid rgb(252, 8, 8); */
+    word-spacing: 25px;
+
 }
 
 .wrapper{
-    background-color: rgb(34, 0, 255);
-    text-align: center;
+    background-color: rgb(32, 32, 32);    text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Define dos columnas de igual tamaño */
     row-gap: 2px;
     column-gap: 2px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    
-
+    /* border: 1px solid yellow; */
 }
 .key{
-    background-color: rgb(128, 123, 123);
+    background-color: rgb(70, 70, 70);
     border-radius: 5px;
     width: 100%;
-    padding: 10px;
-    
+    padding: 16px;
+    &:hover{
+        background-color: rgb(50, 50, 50);
+    }
+}
 
+.dark{
+    background-color: rgb(50, 50, 50);
+    &:hover{
+        background-color:rgb(70, 70, 70); 
+    }
+}
 
+.key.equals{
+    background-color: #d8aade ; 
+}
+
+.key.equals:hover{
+    background-color: #db9ee3 ;
 }
