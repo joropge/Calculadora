@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
     <link rel="stylesheet" href="/styles/calculadora.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -15,42 +19,22 @@
           alt="Calculadora"
         />
         <div class="icons">
-            <div class="left-wrapper">
-              <div class="hamburguer-wrapper">
-                <div class="hamburguer"></div>
-                <div class="hamburguer"></div>
-                <div class="hamburguer"></div>
-              </div>
-              <p><b>Estándar</b></p>
-             <p style="font-size: 20px; font-weight: bold;">◱</p> 
+          <div class="left-wrapper">
+            <div class="hamburguer-wrapper">
+              <div class="hamburguer"></div>
+              <div class="hamburguer"></div>
+              <div class="hamburguer"></div>
             </div>
-            <div class="historial">
-              <svg
-                fill="#fff"
-                viewBox="0 0 19 19"
-                xmlns="http://www.w3.org/2000/svg"
-                class="cf-icon-svg"
-                stroke="#fff"
-                width="25px"
-                height="25px"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M16.417 9.5a7.919 7.919 0 0 1-15.212 3.082A7.87 7.87 0 0 1 .584 9.5a.554.554 0 0 1 1.109 0 6.81 6.81 0 0 0 13.081 2.65 6.811 6.811 0 0 0-9.66-8.557 6.859 6.859 0 0 0-1.847 1.554h1.276a.554.554 0 0 1 0 1.108h-2.61a.554.554 0 0 1-.555-.554V3.09a.554.554 0 0 1 1.109 0v1.262A7.898 7.898 0 0 1 8.5 1.583 7.911 7.911 0 0 1 16.417 9.5zm-5.181 3a.554.554 0 0 1-.784 0l-2.42-2.42a.552.552 0 0 1-.22-.441V5.168a.554.554 0 1 1 1.11 0v4.234l2.314 2.315a.554.554 0 0 1 0 .784z"
-                  ></path>
-                </g>
-              </svg>
-            </div>
+            <p><b>Estándar</b></p>
+            <p style="font-size: 20px; font-weight: bold">◱</p>
+          </div>
+          <div class="historial">
+            <i class="fa-solid fa-clock-rotate-left" style="color: #ffffff"></i>
+          </div>
         </div>
         <div class="display">
           <span class="display history"></span>
-          <span class="display result"></span>
+          <span id="miSpan" class="display result"></span>
           <span class="display letter">MC MR M+ M- MS M</span>
         </div>
         <div class="wrapper">
@@ -65,7 +49,7 @@
           <div class="key">7</div>
           <div class="key">8</div>
           <div class="key">9</div>
-          <div class="key multiply dark">x</div>
+          <div class="key multiply dark">X</div>
           <div class="key">4</div>
           <div class="key">5</div>
           <div class="key">6</div>
