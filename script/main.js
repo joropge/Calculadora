@@ -112,7 +112,7 @@ function sqrt(display) {
 }
 
 function division(display) {
-  display.innerHTML = display.innerHTML + "/";
+  display.innerHTML += "/";
 }
 
 function pi(display) {
@@ -126,7 +126,3 @@ function percent(display) {
 function comma(display) {
   display.innerHTML = display.innerHTML + ".";
 }
-
-// function division(display) {
-// display.innerHTML = display.innerHTML / 1;
-// }

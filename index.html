@@ -8,8 +8,6 @@
   </head>
   <body>
     <div class="container">
-      <p>container</p>
-
       <div class="box">
         <img
           class="img-calculator"
@@ -17,13 +15,15 @@
           alt="Calculadora"
         />
         <div class="icons">
-          <div style="display: flex; align-items: center; gap: 20px">
-            <div class="hamburguer-wrapper">
-              <div class="hamburguer"></div>
-              <div class="hamburguer"></div>
-              <div class="hamburguer"></div>
+            <div class="left-wrapper">
+              <div class="hamburguer-wrapper">
+                <div class="hamburguer"></div>
+                <div class="hamburguer"></div>
+                <div class="hamburguer"></div>
+              </div>
+              <p><b>Estándar</b></p>
+             <p style="font-size: 20px; font-weight: bold;">◱</p> 
             </div>
-            <p><b>Estándar</b></p>
             <div class="historial">
               <svg
                 fill="#fff"
@@ -47,7 +47,6 @@
                 </g>
               </svg>
             </div>
-          </div>
         </div>
         <div class="display">
           <span class="display history"></span>
@@ -62,44 +61,7 @@
           <div class="key fraction dark">1/x</div>
           <div class="key root dark">x²</div>
           <div class="key sqrt dark">√</div>
-          <div id="prueba" class="key split dark">÷
-            <!-- <svg class="division"
-              fill="#ffff"
-              version="1.1"
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 472.615 472.615"
-              xml:space="preserve"
-              width="64px"
-              height="64px"
-              stroke="#ffff"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <g>
-                  <g>
-                    <rect y="226.462" width="472.615" height="19.692"></rect>
-                  </g>
-                </g>
-                <g>
-                  <g><circle cx="236.288" cy="96.788" r="66.56"></circle></g>
-                </g>
-                <g>
-                  <g>
-                    <path
-                      d="M236.29,309.268c-36.726,0-66.56,29.932-66.56,66.56c0,36.726,29.834,66.56,66.56,66.56 c36.726,0,66.56-29.834,66.56-66.56C302.85,339.2,273.016,309.268,236.29,309.268z"
-                    ></path>
-                  </g>
-                </g>
-              </g>
-            </svg> -->
-          </div>
+          <div class="key split dark">÷</div>
           <div class="key">7</div>
           <div class="key">8</div>
           <div class="key">9</div>
