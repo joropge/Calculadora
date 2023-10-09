@@ -26,6 +26,7 @@
     justify-content: flex-end;
     margin-left: 120px;
     /* border: 1px solid black; */
+    
   }
 
 .hamburguer {
@@ -37,6 +38,7 @@
   
 
 .container{
+    
     font-family:sans-serif;
     color:whitesmoke;
     background-color: green;
@@ -49,11 +51,12 @@
 
 }
 .box{
+    
     background-color: rgb(32, 32, 32);
     border-radius: 10px;
     padding: 6px;
     min-width: 300px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .display{
@@ -64,18 +67,46 @@
     gap:10px;
     margin-top: 5px;
     margin-bottom: -2px;
-    /* border: 1px solid black;  */
+    border: 1px solid black;
     height: 25%;
+    max-width: 285px;
+    max-height: 15vh;
+    
 
 }
- .display .history{
-    font-size: small;
+ .history{
+    
+    font-size: 0.8em;
     opacity: 0.6;
+    max-width: 285px;
+    display: inline-block;
+   
+
 } 
-.display.result{
-font-size: 50px;
-font-weight: bold;
-justify-content: center;
+/* Acabar que no se muevan las M 
+trato de hacerlo con el max height 
+y con el tamaño de letra*/
+.result{
+    
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+    height: 65px;
+    max-width: 285px;
+    max-height: 65px;
+    display: inline-block;
+    max-width: 100%; /* Establece el ancho máximo igual al contenedor padre */
+    overflow: hidden; /* Oculta cualquier texto que no quepa en el span */
+    font-size: auto;
+
+    &:after{
+    content: "\00a0"; /* Agrega un espacio no rompible para forzar el ajuste del tamaño de letra */
+    display: inline-block;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    font-size: 20px;
+    }
+     
+
 }
 .display.letter{
     display: flex;
@@ -85,11 +116,15 @@ justify-content: center;
     font-size: small;
     /* border: 1px solid rgb(252, 8, 8); */
     word-spacing: 25px;
+    margin-bottom: 1px;
+    max-width:285px;
+    max-height: 2.35vh;
 
 }
 
 .wrapper{
-    background-color: rgb(32, 32, 32);    text-align: center;
+    background-color: rgb(32, 32, 32);    
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Define dos columnas de igual tamaño */
     row-gap: 2px;
@@ -103,9 +138,13 @@ justify-content: center;
     border-radius: 5px;
     width: 100%;
     padding: 16px;
+    max-width: 71px;
+    max-height: 53px;
+    /* padding-bottom: 17px; */
     &:hover{
         background-color: rgb(50, 50, 50);
     }
+    
 }
 
 .dark{
@@ -121,4 +160,14 @@ justify-content: center;
 
 .key.equals:hover{
     background-color: #db9ee3 ;
+}
+.split{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    max-width: 70px;
+    max-height: 53px;
+    /* width: 15px;
+    height: 15px; */
 }
